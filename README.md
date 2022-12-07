@@ -4,6 +4,9 @@
 ## Q&A:
 - 1. Object Pooling
   - The Object Pooling system can load the enemies when the game starts. So the enemies are preloaded which they are not loading during the gameplay, in order to save the performance. I am using an EnemySpawner to randomly activate certain amount of enemies on the two platforms. In my game "Duck Hunt", this system can be used to create any enemies in the scene.
+  - I changed the enemy amount to 1000
+  - [With Object Pooling Memory](https://raw.githubusercontent.com/jeffrey9911/3110-FinalExam/main/%24ExecutableBuild/Screenshot%202022-12-07%20at%202.55.53%20PM.png)
+  - [Without Object Pooling Memory](https://raw.githubusercontent.com/jeffrey9911/3110-FinalExam/main/%24ExecutableBuild/Screenshot%202022-12-07%20at%202.56.35%20PM.png)
 
 - 2. Command
   - The command system has changed the sword as a command invoker. If the player attacks and does not hit anything, the command invoker would add one missing command to its list, and if the list count is greater than 2, the character controller would inverse the up and down aiming movement. This could be used as a punishment system in "Duck Hunt".
